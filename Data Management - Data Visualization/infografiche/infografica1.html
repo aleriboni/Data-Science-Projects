@@ -1,0 +1,1613 @@
+<!doctype html>
+
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+
+  <title>DV Project - Infografica 1</title>
+  <meta name="description" content="DV Project">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      #chord {
+        padding-top: 10px;
+        width: 100%;
+        height: 900px;
+      }
+      #container {
+        padding-top: 5px;
+         width: 100%;
+         height: 10%;
+      }
+      #container img {
+         width: 600px;
+      }
+  </style>
+
+</head>
+
+<body>
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/spiritedaway.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <div id="chord">
+    <script type="text/javascript">
+
+      am4core.useTheme(am4themes_animated);
+
+      var chart2 = am4core.create("chord", am4charts.ChordDiagram);
+
+      chart2.data = [
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 15.67,
+          "percentuale": 20.82,
+          "to": "LOMBARDIA",
+          "total": 48651,
+          "value": 36610
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 9.57,
+          "percentuale": 11.8,
+          "to": "LAZIO",
+          "total": 27577,
+          "value": 22373
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 7.47,
+          "percentuale": 11.04,
+          "to": "PIEMONTE",
+          "total": 25799,
+          "value": 17460
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 5.88,
+          "percentuale": 8.43,
+          "to": "VENETO",
+          "total": 19700,
+          "value": 13747
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 6.87,
+          "percentuale": 8.21,
+          "to": "CAMPANIA",
+          "total": 19180,
+          "value": 16053
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 6.75,
+          "percentuale": 8.18,
+          "to": "TOSCANA",
+          "total": 19121,
+          "value": 15767
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 3.51,
+          "percentuale": 5.88,
+          "to": "EMILIA ROMAGNA",
+          "total": 13737,
+          "value": 8204
+        },
+        {
+          "color": "#ADDBD3",
+          "from": "SICILIA",
+          "perc_arco": 4.99,
+          "percentuale": 5.05,
+          "to": "SICILIA",
+          "total": 11795,
+          "value": 11665
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 2.75,
+          "percentuale": 4.47,
+          "to": "LIGURIA",
+          "total": 10452,
+          "value": 6425
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 2.11,
+          "percentuale": 2.67,
+          "to": "PUGLIA",
+          "total": 6238,
+          "value": 4924
+        },
+        {
+          "color": "#B3DCD3",
+          "from": "CALABRIA",
+          "perc_arco": 1.99,
+          "percentuale": 2.27,
+          "to": "CALABRIA",
+          "total": 5295,
+          "value": 4645
+        },
+        {
+          "color": "#B3DDD2",
+          "from": "SARDEGNA",
+          "perc_arco": 2.05,
+          "percentuale": 2.05,
+          "to": "SARDEGNA",
+          "total": 4789,
+          "value": 4789
+        },
+        {
+          "color": "#B3DCD1",
+          "from": "FRIULI VENEZIA GIULIA",
+          "perc_arco": 0.83,
+          "percentuale": 1.81,
+          "to": "FRIULI VENEZIA GIULIA",
+          "total": 4226,
+          "value": 1928
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 1.02,
+          "percentuale": 1.68,
+          "to": "ABRUZZO",
+          "total": 3914,
+          "value": 2385
+        },
+        {
+          "color": "#B6DFD6",
+          "from": "MARCHE",
+          "perc_arco": 1.13,
+          "percentuale": 1.66,
+          "to": "MARCHE",
+          "total": 3887,
+          "value": 2652
+        },
+        {
+          "color": "#B9E2D8",
+          "from": "TRENTINO ALTO ADIGE",
+          "perc_arco": 1.05,
+          "percentuale": 1.59,
+          "to": "TRENTINO ALTO ADIGE",
+          "total": 3725,
+          "value": 2464
+        },
+        {
+          "color": "#BBE3D8",
+          "from": "ESTERO",
+          "perc_arco": 0.73,
+          "percentuale": 0.75,
+          "to": "LOMBARDIA",
+          "total": 1762,
+          "value": 1700
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.14,
+          "percentuale": 0.67,
+          "to": "UMBRIA",
+          "total": 1577,
+          "value": 333
+        },
+        {
+          "color": "#BBE3D7",
+          "from": "BASILICATA",
+          "perc_arco": 0.18,
+          "percentuale": 0.38,
+          "to": "BASILICATA",
+          "total": 885,
+          "value": 416
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "MOLISE",
+          "perc_arco": 0.02,
+          "percentuale": 0.32,
+          "to": "MOLISE",
+          "total": 755,
+          "value": 45
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "VALLE D'AOSTA",
+          "perc_arco": 0,
+          "percentuale": 0.26,
+          "to": "VALLE D'AOSTA",
+          "total": 599,
+          "value": 4
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0,
+          "percentuale": 11.8,
+          "to": "BASILICATA",
+          "total": 27577,
+          "value": 3
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 0.11,
+          "percentuale": 1.68,
+          "to": "MOLISE",
+          "total": 3914,
+          "value": 259
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.08,
+          "percentuale": 8.21,
+          "to": "VENETO",
+          "total": 19180,
+          "value": 186
+        },
+        {
+          "color": "#BBE3D8",
+          "from": "ESTERO",
+          "perc_arco": 0.01,
+          "percentuale": 0.75,
+          "to": "VENETO",
+          "total": 1762,
+          "value": 18
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.16,
+          "percentuale": 11.8,
+          "to": "LOMBARDIA",
+          "total": 27577,
+          "value": 378
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0,
+          "percentuale": 2.67,
+          "to": "ABRUZZO",
+          "total": 6238,
+          "value": 3
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0,
+          "percentuale": 4.47,
+          "to": "TRENTINO ALTO ADIGE",
+          "total": 10452,
+          "value": 1
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0,
+          "percentuale": 11.04,
+          "to": "TOSCANA",
+          "total": 25799,
+          "value": 1
+        },
+        {
+          "color": "#ADDBD3",
+          "from": "SICILIA",
+          "perc_arco": 0,
+          "percentuale": 5.05,
+          "to": "CALABRIA",
+          "total": 11795,
+          "value": 1
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0,
+          "percentuale": 20.82,
+          "to": "CALABRIA",
+          "total": 48651,
+          "value": 3
+        },
+        {
+          "color": "#BBE3D7",
+          "from": "BASILICATA",
+          "perc_arco": 0,
+          "percentuale": 0.38,
+          "to": "LAZIO",
+          "total": 885,
+          "value": 4
+        },
+        {
+          "color": "#B3DCD3",
+          "from": "CALABRIA",
+          "perc_arco": 0,
+          "percentuale": 2.27,
+          "to": "LOMBARDIA",
+          "total": 5295,
+          "value": 4
+        },
+        {
+          "color": "#B3DCD1",
+          "from": "FRIULI VENEZIA GIULIA",
+          "perc_arco": 0,
+          "percentuale": 1.81,
+          "to": "EMILIA ROMAGNA",
+          "total": 4226,
+          "value": 1
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.01,
+          "percentuale": 8.21,
+          "to": "PUGLIA",
+          "total": 19180,
+          "value": 30
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 0.04,
+          "percentuale": 1.68,
+          "to": "LOMBARDIA",
+          "total": 3914,
+          "value": 93
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.02,
+          "percentuale": 20.82,
+          "to": "UMBRIA",
+          "total": 48651,
+          "value": 58
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.01,
+          "percentuale": 0.67,
+          "to": "PIEMONTE",
+          "total": 1577,
+          "value": 23
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.04,
+          "percentuale": 11.8,
+          "to": "TRENTINO ALTO ADIGE",
+          "total": 27577,
+          "value": 93
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.01,
+          "percentuale": 2.67,
+          "to": "CAMPANIA",
+          "total": 6238,
+          "value": 31
+        },
+        {
+          "color": "#ADDBD3",
+          "from": "SICILIA",
+          "perc_arco": 0.01,
+          "percentuale": 5.05,
+          "to": "LOMBARDIA",
+          "total": 11795,
+          "value": 18
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.04,
+          "percentuale": 11.8,
+          "to": "SICILIA",
+          "total": 27577,
+          "value": 84
+        },
+        {
+          "color": "#B6DFD6",
+          "from": "MARCHE",
+          "perc_arco": 0.04,
+          "percentuale": 1.66,
+          "to": "UMBRIA",
+          "total": 3887,
+          "value": 83
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "MOLISE",
+          "perc_arco": 0.09,
+          "percentuale": 0.32,
+          "to": "LAZIO",
+          "total": 755,
+          "value": 205
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.01,
+          "percentuale": 4.47,
+          "to": "CAMPANIA",
+          "total": 10452,
+          "value": 31
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.04,
+          "percentuale": 20.82,
+          "to": "ABRUZZO",
+          "total": 48651,
+          "value": 93
+        },
+        {
+          "color": "#B3DCD3",
+          "from": "CALABRIA",
+          "perc_arco": 0.01,
+          "percentuale": 2.27,
+          "to": "PIEMONTE",
+          "total": 5295,
+          "value": 23
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.01,
+          "percentuale": 8.43,
+          "to": "LIGURIA",
+          "total": 19700,
+          "value": 31
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.04,
+          "percentuale": 0.67,
+          "to": "MARCHE",
+          "total": 1577,
+          "value": 83
+        },
+        {
+          "color": "#B6DFD6",
+          "from": "MARCHE",
+          "perc_arco": 0.1,
+          "percentuale": 1.66,
+          "to": "LAZIO",
+          "total": 3887,
+          "value": 239
+        },
+        {
+          "color": "#B6DFD6",
+          "from": "MARCHE",
+          "perc_arco": 0.13,
+          "percentuale": 1.66,
+          "to": "ABRUZZO",
+          "total": 3887,
+          "value": 313
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.03,
+          "percentuale": 20.82,
+          "to": "MARCHE",
+          "total": 48651,
+          "value": 65
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.03,
+          "percentuale": 2.67,
+          "to": "PIEMONTE",
+          "total": 6238,
+          "value": 62
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.16,
+          "percentuale": 0.67,
+          "to": "TOSCANA",
+          "total": 1577,
+          "value": 381
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 0.13,
+          "percentuale": 1.68,
+          "to": "UMBRIA",
+          "total": 3914,
+          "value": 308
+        },
+        {
+          "color": "#B3DCD1",
+          "from": "FRIULI VENEZIA GIULIA",
+          "perc_arco": 0.03,
+          "percentuale": 1.81,
+          "to": "PIEMONTE",
+          "total": 4226,
+          "value": 62
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.18,
+          "percentuale": 0.67,
+          "to": "LAZIO",
+          "total": 1577,
+          "value": 414
+        },
+        {
+          "color": "#B3DCD3",
+          "from": "CALABRIA",
+          "perc_arco": 0.01,
+          "percentuale": 2.27,
+          "to": "PUGLIA",
+          "total": 5295,
+          "value": 14
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.17,
+          "percentuale": 11.8,
+          "to": "VENETO",
+          "total": 27577,
+          "value": 390
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.08,
+          "percentuale": 4.47,
+          "to": "LAZIO",
+          "total": 10452,
+          "value": 180
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.04,
+          "percentuale": 20.82,
+          "to": "FRIULI VENEZIA GIULIA",
+          "total": 48651,
+          "value": 84
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0,
+          "percentuale": 5.88,
+          "to": "ABRUZZO",
+          "total": 13737,
+          "value": 7
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 0.16,
+          "percentuale": 8.18,
+          "to": "UMBRIA",
+          "total": 19121,
+          "value": 382
+        },
+        {
+          "color": "#B9E2D8",
+          "from": "TRENTINO ALTO ADIGE",
+          "perc_arco": 0.04,
+          "percentuale": 1.59,
+          "to": "LAZIO",
+          "total": 3725,
+          "value": 101
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0,
+          "percentuale": 8.43,
+          "to": "MARCHE",
+          "total": 19700,
+          "value": 1
+        },
+        {
+          "color": "#B9E2D8",
+          "from": "TRENTINO ALTO ADIGE",
+          "perc_arco": 0.08,
+          "percentuale": 1.59,
+          "to": "EMILIA ROMAGNA",
+          "total": 3725,
+          "value": 185
+        },
+        {
+          "color": "#B9E2D8",
+          "from": "TRENTINO ALTO ADIGE",
+          "perc_arco": 0.39,
+          "percentuale": 1.59,
+          "to": "VENETO",
+          "total": 3725,
+          "value": 914
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.05,
+          "percentuale": 5.88,
+          "to": "PUGLIA",
+          "total": 13737,
+          "value": 121
+        },
+        {
+          "color": "#BBE3D8",
+          "from": "ESTERO",
+          "perc_arco": 0.02,
+          "percentuale": 0.75,
+          "to": "PIEMONTE",
+          "total": 1762,
+          "value": 44
+        },
+        {
+          "color": "#BBE3D7",
+          "from": "BASILICATA",
+          "perc_arco": 0.14,
+          "percentuale": 0.38,
+          "to": "PUGLIA",
+          "total": 885,
+          "value": 322
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0,
+          "percentuale": 0.67,
+          "to": "FRIULI VENEZIA GIULIA",
+          "total": 1577,
+          "value": 1
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.12,
+          "percentuale": 20.82,
+          "to": "TOSCANA",
+          "total": 48651,
+          "value": 274
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.15,
+          "percentuale": 4.47,
+          "to": "EMILIA ROMAGNA",
+          "total": 10452,
+          "value": 357
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.13,
+          "percentuale": 0.67,
+          "to": "ABRUZZO",
+          "total": 1577,
+          "value": 307
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 0.3,
+          "percentuale": 8.18,
+          "to": "LAZIO",
+          "total": 19121,
+          "value": 705
+        },
+        {
+          "color": "#B3DCD3",
+          "from": "CALABRIA",
+          "perc_arco": 0.11,
+          "percentuale": 2.27,
+          "to": "LAZIO",
+          "total": 5295,
+          "value": 249
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.11,
+          "percentuale": 11.8,
+          "to": "PIEMONTE",
+          "total": 27577,
+          "value": 262
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.17,
+          "percentuale": 20.82,
+          "to": "LAZIO",
+          "total": 48651,
+          "value": 408
+        },
+        {
+          "color": "#B3DCD1",
+          "from": "FRIULI VENEZIA GIULIA",
+          "perc_arco": 0.06,
+          "percentuale": 1.81,
+          "to": "LOMBARDIA",
+          "total": 4226,
+          "value": 147
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.06,
+          "percentuale": 8.21,
+          "to": "BASILICATA",
+          "total": 19180,
+          "value": 143
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.44,
+          "percentuale": 11.8,
+          "to": "CAMPANIA",
+          "total": 27577,
+          "value": 1019
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.08,
+          "percentuale": 11.8,
+          "to": "LIGURIA",
+          "total": 27577,
+          "value": 181
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "MOLISE",
+          "perc_arco": 0.11,
+          "percentuale": 0.32,
+          "to": "ABRUZZO",
+          "total": 755,
+          "value": 259
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.09,
+          "percentuale": 11.8,
+          "to": "MOLISE",
+          "total": 27577,
+          "value": 200
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.03,
+          "percentuale": 2.67,
+          "to": "VENETO",
+          "total": 6238,
+          "value": 61
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 0.34,
+          "percentuale": 8.18,
+          "to": "LIGURIA",
+          "total": 19121,
+          "value": 803
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.11,
+          "percentuale": 11.8,
+          "to": "CALABRIA",
+          "total": 27577,
+          "value": 248
+        },
+        {
+          "color": "#B3DCD1",
+          "from": "FRIULI VENEZIA GIULIA",
+          "perc_arco": 0.08,
+          "percentuale": 1.81,
+          "to": "LAZIO",
+          "total": 4226,
+          "value": 176
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.16,
+          "percentuale": 8.43,
+          "to": "LAZIO",
+          "total": 19700,
+          "value": 380
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.02,
+          "percentuale": 11.04,
+          "to": "ESTERO",
+          "total": 25799,
+          "value": 44
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.3,
+          "percentuale": 20.82,
+          "to": "CAMPANIA",
+          "total": 48651,
+          "value": 692
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.05,
+          "percentuale": 11.04,
+          "to": "FRIULI VENEZIA GIULIA",
+          "total": 25799,
+          "value": 124
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.01,
+          "percentuale": 20.82,
+          "to": "SICILIA",
+          "total": 48651,
+          "value": 22
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "MOLISE",
+          "perc_arco": 0.04,
+          "percentuale": 0.32,
+          "to": "PUGLIA",
+          "total": 755,
+          "value": 102
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.05,
+          "percentuale": 2.67,
+          "to": "EMILIA ROMAGNA",
+          "total": 6238,
+          "value": 120
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.16,
+          "percentuale": 8.21,
+          "to": "CALABRIA",
+          "total": 19180,
+          "value": 363
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.09,
+          "percentuale": 11.04,
+          "to": "VENETO",
+          "total": 25799,
+          "value": 217
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.26,
+          "percentuale": 5.88,
+          "to": "MARCHE",
+          "total": 13737,
+          "value": 609
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.34,
+          "percentuale": 8.21,
+          "to": "LOMBARDIA",
+          "total": 19180,
+          "value": 787
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.15,
+          "percentuale": 11.04,
+          "to": "CAMPANIA",
+          "total": 25799,
+          "value": 362
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.72,
+          "percentuale": 20.82,
+          "to": "ESTERO",
+          "total": 48651,
+          "value": 1681
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.52,
+          "percentuale": 5.88,
+          "to": "TOSCANA",
+          "total": 13737,
+          "value": 1214
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.01,
+          "percentuale": 11.04,
+          "to": "CALABRIA",
+          "total": 25799,
+          "value": 22
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.14,
+          "percentuale": 5.88,
+          "to": "LIGURIA",
+          "total": 13737,
+          "value": 329
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.11,
+          "percentuale": 2.67,
+          "to": "LAZIO",
+          "total": 6238,
+          "value": 248
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.63,
+          "percentuale": 8.43,
+          "to": "LOMBARDIA",
+          "total": 19700,
+          "value": 1482
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 0.12,
+          "percentuale": 8.18,
+          "to": "LOMBARDIA",
+          "total": 19121,
+          "value": 278
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.1,
+          "percentuale": 8.43,
+          "to": "PIEMONTE",
+          "total": 19700,
+          "value": 224
+        },
+        {
+          "color": "#B3DCD3",
+          "from": "CALABRIA",
+          "perc_arco": 0.15,
+          "percentuale": 2.27,
+          "to": "CAMPANIA",
+          "total": 5295,
+          "value": 360
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.17,
+          "percentuale": 11.8,
+          "to": "UMBRIA",
+          "total": 27577,
+          "value": 408
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.01,
+          "percentuale": 4.47,
+          "to": "VENETO",
+          "total": 10452,
+          "value": 31
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.01,
+          "percentuale": 11.8,
+          "to": "EMILIA ROMAGNA",
+          "total": 27577,
+          "value": 31
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.11,
+          "percentuale": 5.88,
+          "to": "TRENTINO ALTO ADIGE",
+          "total": 13737,
+          "value": 249
+        },
+        {
+          "color": "#B6DFD6",
+          "from": "MARCHE",
+          "perc_arco": 0.03,
+          "percentuale": 1.66,
+          "to": "LOMBARDIA",
+          "total": 3887,
+          "value": 62
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.01,
+          "percentuale": 8.21,
+          "to": "TOSCANA",
+          "total": 19180,
+          "value": 27
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.01,
+          "percentuale": 2.67,
+          "to": "CALABRIA",
+          "total": 6238,
+          "value": 14
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.91,
+          "percentuale": 4.47,
+          "to": "PIEMONTE",
+          "total": 10452,
+          "value": 2124
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.37,
+          "percentuale": 8.43,
+          "to": "TRENTINO ALTO ADIGE",
+          "total": 19700,
+          "value": 868
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.22,
+          "percentuale": 4.47,
+          "to": "LOMBARDIA",
+          "total": 10452,
+          "value": 505
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.06,
+          "percentuale": 8.21,
+          "to": "MOLISE",
+          "total": 19180,
+          "value": 149
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.14,
+          "percentuale": 2.67,
+          "to": "BASILICATA",
+          "total": 6238,
+          "value": 328
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.03,
+          "percentuale": 8.43,
+          "to": "PUGLIA",
+          "total": 19700,
+          "value": 61
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 0.5,
+          "percentuale": 8.18,
+          "to": "EMILIA ROMAGNA",
+          "total": 19121,
+          "value": 1161
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.3,
+          "percentuale": 11.8,
+          "to": "TOSCANA",
+          "total": 27577,
+          "value": 710
+        },
+        {
+          "color": "#ADDBD3",
+          "from": "SICILIA",
+          "perc_arco": 0.05,
+          "percentuale": 5.05,
+          "to": "LAZIO",
+          "total": 11795,
+          "value": 111
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.95,
+          "percentuale": 5.88,
+          "to": "LOMBARDIA",
+          "total": 13737,
+          "value": 2221
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.33,
+          "percentuale": 8.43,
+          "to": "EMILIA ROMAGNA",
+          "total": 19700,
+          "value": 763
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.44,
+          "percentuale": 8.21,
+          "to": "LAZIO",
+          "total": 19180,
+          "value": 1029
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.24,
+          "percentuale": 11.8,
+          "to": "ABRUZZO",
+          "total": 27577,
+          "value": 569
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.14,
+          "percentuale": 8.21,
+          "to": "PIEMONTE",
+          "total": 19180,
+          "value": 320
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.32,
+          "percentuale": 5.88,
+          "to": "VENETO",
+          "total": 13737,
+          "value": 753
+        },
+        {
+          "color": "#B3DCD1",
+          "from": "FRIULI VENEZIA GIULIA",
+          "perc_arco": 0.82,
+          "percentuale": 1.81,
+          "to": "VENETO",
+          "total": 4226,
+          "value": 1912
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.04,
+          "percentuale": 2.67,
+          "to": "MOLISE",
+          "total": 6238,
+          "value": 102
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.06,
+          "percentuale": 11.8,
+          "to": "FRIULI VENEZIA GIULIA",
+          "total": 27577,
+          "value": 144
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.15,
+          "percentuale": 20.82,
+          "to": "PUGLIA",
+          "total": 48651,
+          "value": 339
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.82,
+          "percentuale": 8.43,
+          "to": "FRIULI VENEZIA GIULIA",
+          "total": 19700,
+          "value": 1907
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 1.74,
+          "percentuale": 20.82,
+          "to": "PIEMONTE",
+          "total": 48651,
+          "value": 4074
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.24,
+          "percentuale": 11.04,
+          "to": "VALLE D'AOSTA",
+          "total": 25799,
+          "value": 558
+        },
+        {
+          "color": "#ADD9D1",
+          "from": "LIGURIA",
+          "perc_arco": 0.34,
+          "percentuale": 4.47,
+          "to": "TOSCANA",
+          "total": 10452,
+          "value": 798
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 0,
+          "percentuale": 1.68,
+          "to": "EMILIA ROMAGNA",
+          "total": 3914,
+          "value": 6
+        },
+        {
+          "color": "#B9E2D8",
+          "from": "TRENTINO ALTO ADIGE",
+          "perc_arco": 0.03,
+          "percentuale": 1.59,
+          "to": "CAMPANIA",
+          "total": 3725,
+          "value": 61
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0.14,
+          "percentuale": 2.67,
+          "to": "LOMBARDIA",
+          "total": 6238,
+          "value": 337
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.91,
+          "percentuale": 11.04,
+          "to": "LIGURIA",
+          "total": 25799,
+          "value": 2124
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.65,
+          "percentuale": 20.82,
+          "to": "VENETO",
+          "total": 48651,
+          "value": 1515
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.22,
+          "percentuale": 20.82,
+          "to": "LIGURIA",
+          "total": 48651,
+          "value": 515
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "MOLISE",
+          "perc_arco": 0.06,
+          "percentuale": 0.32,
+          "to": "CAMPANIA",
+          "total": 755,
+          "value": 144
+        },
+        {
+          "color": "#A1D0CB",
+          "from": "TOSCANA",
+          "perc_arco": 0.01,
+          "percentuale": 8.18,
+          "to": "CAMPANIA",
+          "total": 19121,
+          "value": 25
+        },
+        {
+          "color": "#8BC7CC",
+          "from": "LOMBARDIA",
+          "perc_arco": 0.95,
+          "percentuale": 20.82,
+          "to": "EMILIA ROMAGNA",
+          "total": 48651,
+          "value": 2218
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.13,
+          "percentuale": 11.04,
+          "to": "LAZIO",
+          "total": 25799,
+          "value": 295
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.03,
+          "percentuale": 8.21,
+          "to": "TRENTINO ALTO ADIGE",
+          "total": 19180,
+          "value": 62
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0,
+          "percentuale": 11.04,
+          "to": "EMILIA ROMAGNA",
+          "total": 25799,
+          "value": 1
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "CAMPANIA",
+          "perc_arco": 0.01,
+          "percentuale": 8.21,
+          "to": "LIGURIA",
+          "total": 19180,
+          "value": 31
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.02,
+          "percentuale": 8.43,
+          "to": "ESTERO",
+          "total": 19700,
+          "value": 50
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.1,
+          "percentuale": 11.8,
+          "to": "PUGLIA",
+          "total": 27577,
+          "value": 241
+        },
+        {
+          "color": "#BBE3D7",
+          "from": "BASILICATA",
+          "perc_arco": 0.06,
+          "percentuale": 0.38,
+          "to": "CAMPANIA",
+          "total": 885,
+          "value": 143
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 0.13,
+          "percentuale": 1.68,
+          "to": "MARCHE",
+          "total": 3914,
+          "value": 298
+        },
+        {
+          "color": "#B8E0D4",
+          "from": "UMBRIA",
+          "perc_arco": 0.01,
+          "percentuale": 0.67,
+          "to": "LOMBARDIA",
+          "total": 1577,
+          "value": 35
+        },
+        {
+          "color": "#BCE4D8",
+          "from": "VALLE D'AOSTA",
+          "perc_arco": 0.25,
+          "percentuale": 0.26,
+          "to": "PIEMONTE",
+          "total": 599,
+          "value": 595
+        },
+        {
+          "color": "#A4D4CF",
+          "from": "VENETO",
+          "perc_arco": 0.08,
+          "percentuale": 8.43,
+          "to": "CAMPANIA",
+          "total": 19700,
+          "value": 186
+        },
+        {
+          "color": "#9DD1CF",
+          "from": "LAZIO",
+          "perc_arco": 0.1,
+          "percentuale": 11.8,
+          "to": "MARCHE",
+          "total": 27577,
+          "value": 243
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 0.03,
+          "percentuale": 11.04,
+          "to": "PUGLIA",
+          "total": 25799,
+          "value": 61
+        },
+        {
+          "color": "#AFD9CF",
+          "from": "PUGLIA",
+          "perc_arco": 0,
+          "percentuale": 2.67,
+          "to": "MARCHE",
+          "total": 6238,
+          "value": 8
+        },
+        {
+          "color": "#B5DED4",
+          "from": "ABRUZZO",
+          "perc_arco": 0.24,
+          "percentuale": 1.68,
+          "to": "LAZIO",
+          "total": 3914,
+          "value": 565
+        },
+        {
+          "color": "#9CCECB",
+          "from": "PIEMONTE",
+          "perc_arco": 1.94,
+          "percentuale": 11.04,
+          "to": "LOMBARDIA",
+          "total": 25799,
+          "value": 4530
+        },
+        {
+          "color": "#AEDDD5",
+          "from": "EMILIA ROMAGNA",
+          "perc_arco": 0.01,
+          "percentuale": 5.88,
+          "to": "LAZIO",
+          "total": 13737,
+          "value": 30
+        },
+        {
+          "color": "#B6DFD6",
+          "from": "MARCHE",
+          "perc_arco": 0.23,
+          "percentuale": 1.66,
+          "to": "EMILIA ROMAGNA",
+          "total": 3887,
+          "value": 538
+        }
+      ];
+
+      chart2.radius = am4core.percent(75);
+
+      var title = chart2.titles.create();
+      title.text = "Traffico ferroviario del mese di Gennaio 2019";
+      title.fontSize = 25;
+      //title.fill = am4charts.color("#323B34")
+      title.marginBottom = 15;
+      title.marginBottom = 15;
+
+      chart2.dataFields.fromName = "from";
+      chart2.dataFields.toName = "to";
+      chart2.dataFields.value = "value";
+      chart2.dataFields.color = "color";
+      chart2.dataFields.total = "total";
+      chart2.dataFields.percentuale = "percentuale";
+      chart2.dataFields.perc_arco = "perc_arco";
+
+      // make nodes draggable
+      var nodeTemplate = chart2.nodes.template;
+      nodeTemplate.readerTitle = "Clicca per mostrare/nascondere la regione";
+      nodeTemplate.showSystemTooltip = true;
+      nodeTemplate.fontSize = 10;
+      nodeTemplate.tooltipHTML = "{from}<br>Percentuale coperta: {percentuale} %"
+
+      var label = nodeTemplate.label;
+      label.relativeRotation = 90;
+
+      label.fillOpacity = 0.6;
+      let labelHS = label.states.create("hover");
+      labelHS.properties.fillOpacity = 1;
+
+
+      var nodeLink = chart2.links.template;
+      nodeLink.tooltipHTML = `
+      <h8 align="center">Da: {fromName}<br>A: {toName}<br>Percentuale coperta: {perc_arco} %</h8>`
+
+      var bullet = nodeLink.bullets.push(new am4charts.CircleBullet());
+      bullet.fillOpacity = 0.5;
+      bullet.circle.radius = 5;
+      bullet.locationX = 0.5;
+
+      // create animations
+      chart2.events.on("ready", function() {
+          for (var i = 0; i < chart2.links.length; i++) {
+              var link = chart2.links.getIndex(i);
+              var bullet = link.bullets.getIndex(0);
+
+              animateBullet(bullet);
+          }
+      })
+
+      function animateBullet(bullet) {
+          var duration = 3000 * Math.random() + 2000;
+          var animation = bullet.animate([{ property: "locationX", from: 0, to: 1 }], duration)
+          animation.events.on("animationended", function(event) {
+              animateBullet(event.target.object);
+          })
+
+      }
+    </script>
+  </div>
+  <div id="container" align="center">
+    <img src="legenda.png" alt="" />
+  </div>
+
+</body>
+</html>
